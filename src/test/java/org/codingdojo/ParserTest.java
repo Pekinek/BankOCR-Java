@@ -1,4 +1,4 @@
-package com.mmocek;
+package org.codingdojo;
 
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +15,8 @@ class ParserTest {
 
     @Test
     void shouldParseZeros() throws IOException, URISyntaxException {
-        var fileContent = Files.readString(Path.of(this.getClass().getResource("/00000000.txt").toURI()));
+
+        var fileContent = Files.readString(Path.of(this.getClass().getResource("/zeros.txt").toURI()));
         assertThat(parser.parse(fileContent)).isEqualTo("000000000");
     }
 

@@ -1,4 +1,4 @@
-package com.mmocek;
+package org.codingdojo;
 
 public class Parser {
 
